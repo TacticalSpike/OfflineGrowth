@@ -1,0 +1,8 @@
+
+{
+  "required": false,
+  "package": "com.example.offlinegrowth.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [],
+  "injectors": {"defaultRequire": 1}
+}

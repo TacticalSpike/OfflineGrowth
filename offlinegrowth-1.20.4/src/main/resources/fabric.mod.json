@@ -1,0 +1,20 @@
+
+{
+  "schemaVersion": 1,
+  "id": "offlinegrowth",
+  "version": "1.0.1",
+  "name": "Offline Crop Catch-Up",
+  "description": "Advances crop age based on real time elapsed between sessions.",
+  "authors": ["tackyspoke"]
+  ,"contact": {"sources": ""}
+  ,"license": "ARR",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.offlinegrowth.OfflineGrowthMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric": "*",
+    "minecraft": "1.20.4"
+  }
+}
