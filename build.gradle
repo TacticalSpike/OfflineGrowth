@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.gradle.userdev' version '7.0.120'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    maven { url = "https://maven.neoforged.net/releases" }
+    mavenCentral()
+}
+
+dependencies {
+    implementation "net.neoforged:neoforge:21.1.199" // Adjust to your installed version
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}
+
+
+tasks.processResources {
+    inputs.property "version", project.version
+    filesMatching("META-INF/neoforge.mods.toml") {
+        expand "file": [ "jarVersion": project.version ]
+    }
+}
+
+group = "com.example.offlinegrowth"
+version = "1.0.0"   // <- pick anything you want
+
+tasks.processResources {
+    inputs.property "jarVersion", project.version
+    filesMatching("META-INF/neoforge.mods.toml") {
+        expand("file": ["jarVersion": project.version])
+    }
+}

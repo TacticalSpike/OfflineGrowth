@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[4,]"            # inclusive 4, no upper cap
+license="ARR"
+
+[[mods]]
+modId="offlinegrowth"           # MUST match @Mod("offlinegrowth")
+version="${file.jarVersion}"    # or hardcode "1.0.0"
+displayName="Offline Crop Catch-Up"
+authors="tackyspoke"
+description="Crops advance while you're offline."
+
+[[dependencies.offlinegrowth]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22]"    # allow 1.21.1 up to (but not incl) 1.22
+side="BOTH"
+
+[[dependencies.offlinegrowth]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,]"          # 21.1 or newer
+ordering="NONE"
+side="BOTH"
