@@ -1,0 +1,19 @@
+
+{
+  "schemaVersion": 1,
+  "id": "offlinegrowth",
+  "version": "1.0.0",
+  "name": "Offline Crop Catch-Up",
+  "description": "Crops advance while you're offline.",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.offlinegrowth.OfflineGrowthMod"
+    ]
+  },
+  "depends": {
+    "minecraft": ">=1.21.1 <1.22",
+    "fabricloader": ">=0.15.11",
+    "fabric-api": "*"
+  }
+}
