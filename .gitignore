@@ -39,6 +39,3 @@ classes/
 # OS junk
 .DS_Store
 Thumbs.db
-
-# Jars (keep them off the source branch)
-*.jar
